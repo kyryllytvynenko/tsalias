@@ -1,0 +1,186 @@
+/* General styles for the body and background */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f6ef; /* Light gray background */
+    background-size: cover;
+    color: #5d5d51;
+    text-align: center;
+  }
+  
+  /* Container for the entire app */
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Header styles */
+  h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Setup screen styles */
+  /* .SetupScreen, .PointsSelectionScreen, .GameScreen, .FinalScoreScreen {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  } */
+
+  .SetupScreen label {
+    font-size: 18px;
+  }
+
+  .SetupScreen input {
+    border: 1px solid #333;
+    padding: 3px;
+    border-radius: 4px;
+    font-size: 24px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .SetupScreen button {
+    width: 100%;
+    margin: 0;
+  }
+
+  .PointsSelectionScreen .button-2, .PointsSelectionScreen .button-3, .PointsSelectionScreen .button-4 {
+    width: 100%;
+    height: 140px;
+    color: #5d5d51;
+    font-size: 28px;
+  }
+  
+  /* Button styles */
+  button {
+    background-color: #628b35;
+    color: #e9ffd5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 12px;
+    margin: 0;
+    width: 100%;
+  }
+  
+  /* Disable button style */
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Point selection buttons */
+  button.selected {
+    background-color: #103713; /* Red color for selected button */
+  }
+  
+  button {
+    margin: 5px;
+  }
+  
+  /* Styles for displaying the game screen */
+  .GameScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .GameScreen p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  /* Timer display */
+  .GameScreen p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Card styles based on the points */
+  .card {
+    height: 300px;
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 0px 3px #333;
+  }
+  
+  .card button {
+    width: 50%;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .card .skip {
+    background-color: #d84339;
+  }
+
+  .card .category {
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  
+  .card-2, .PointsSelectionScreen .button-2 {
+    background-color: #c87e96; /* Pink for 2 points */
+  }
+  .card-2 .category {
+    color: #893A54;
+  }
+  
+  .card-3, .PointsSelectionScreen .button-3 {
+    background-color: #85abab; /* Green for 3 points */
+  }
+  .card-3 .category {
+    color: #5d8787;
+  }
+  
+  .card-4, .PointsSelectionScreen .button-4 {
+    background-color: #d6d385; /* Purple for 4 points */
+  }
+  .card-4 .category {
+    color: #c3be4c;
+  }
+  
+  /* Score list */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    font-size: 18px;
+    padding: 5px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+  
+    h1, h2, h3 {
+      font-size: 24px;
+    }
+  }
+  
